@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEFORE AND AFTER PSEUDO SELECTORS</title>
+    <style>
+
+        html{
+            height: 1200px;
+            
+        }
+        body{
+            background-color: violet;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0%;
+            padding: 0%;
+            /* background: url(https://unsplash.com/s/photos/source); */
+            background: url('smoke.avif'); 
+            position: absolute;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+                       opacity: 1;
+        }
+        .navigation{
+            display: flex;
+            margin: auto;
+            width: fit-content;
+            color: pink;
+
+        }
+        li{
+            list-style: none;
+            padding: 33px 22px;
+            margin: 3px;
+            text-decoration: underline;
+            color: tomato;
+        }
+        section{
+            margin: 100px;
+            padding: 20px;
+            flex-direction: column;
+            background-color: aliceblue;
+            border: 3px solid black;
+            display: flex; 
+            /* text-decoration: underline;    */
+            justify-content: center;
+            text-align: center;
+        }
+        section::before{
+            content:" THIS IS IMPLEMENTATION OF BEFORE PSEUDO SELECTOR "            
+        }
+        h1{
+            font-size: 4rem;
+        }
+        li a:hover{
+            color: white;
+        }
+        
+        li a:active{
+            display: block;
+        }
+        nav li:nth-child(2n+0){
+            color: pink;
+        }
+        .item{
+            color: hotpink;
+
+        }
+        
+        
+    </style>  
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="http://google.com" target="_blank">HOME</a></li>
+                <li class="item"><a href="http://facebook.com" target="_blank">ABOUT US</a></li>
+                <li class="item"><a href="http://instagram.com" target="_blank">SERVICES</a></li>
+                <li class="item"><a href="http://linkedin.com" target="_blank"> CONTACT US</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h1>WELCOME TO OUR WEBPAGE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <hr>  Dolorum neque sunt, labore maiores facere voluptatibus reprehenderit beatae, aut error aspernatur consectetur, necessitatibus deleniti quia! Inventore ipsum dolore fugiat quam facere? Harum quod voluptatem est at voluptates ipsam voluptatum eaque veritatis laborum aperiam veniam porro dolores placeat rerum ducimus, maiores voluptatibus quo consequatur! Veritatis sequi perspiciatis perferendis molestias delectus natus modi sapiente incidunt quaerat, possimus adipisci dolor ex consequatur. Quis sunt sit illum recusandae officia aperiam voluptatibus exercitationem necessitatibus praesentium autem iusto nemo, voluptatem consequatur vitae minus excepturi quaerat sequi quisquam ab est ipsam! Dolores iste libero ipsam possimus assumenda ea quos ratione. Consectetur facere minima sint dolore laboriosam! Quidem repellendus omnis voluptatem quasi blanditiis asperiores obcaecati deserunt nihil, ex quaerat illo porro sequi. Quae?</p>
+    </section>
+</body>
+</html>

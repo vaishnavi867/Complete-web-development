@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING FUNCTIONS</title>
+</head>
+<body>
+
+    
+
+
+    <script>
+        var str = "this is a string ";
+        console.log(str);
+
+        // FIRST OCCURENCE OS A SUBSTRING
+        var position = str.indexOf('is')
+        console.log(position);
+        // LAST OCCURENCE OS A SUBSTRING
+        var position = str.lastIndexOf('is')
+        console.log(position);
+        // SUBSTRING FROM A STRING
+        var substr1 = str.substr(1,7) //slice can include negative values also but substring cannot
+        var substr1 = str.substr(1,7) // here 1 means start from the 2nd alphabet as counting is started from zero and 7 means extend the length till 7
+        console.log(substr1);
+        // var replaced = str.replace('string', 'baby');
+        // console.log(str);
+        // console.log(replaced);
+
+        // console.log(str.toUpperCase())
+        // console.log(str.toLowerCase())
+        // var newstring = str.concat('New String') //better way use + for concatenation
+        // console.log(newstring);
+        // var strwithwhitespaces = '    this       contains        white spa     ces     '
+        // console.log(strwithwhitespaces)
+        // console.log(strwithwhitespaces.trim())
+        //HOW TO EXTRACT CHARACTERS FROM A STRING??
+
+
+        var char3 = str.charAt(2)  //charcodeat is not very important 
+        console.log(char3);
+        
+
+    </script>
+</body>
+
+</html>

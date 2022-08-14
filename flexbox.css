@@ -1,0 +1,49 @@
+.container{
+    height: 400px;
+    width: 100%;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    /* by default it is no wrap  */
+    flex-flow: column-reverse wrap; 
+    /* this is a shorthand for direction  */
+    /* justify-content: center; */
+    /* justify-content:  space-around ; */
+    /* align-self: center; */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+/* PROPERTIES OF FLEX CONTAINER  */
+/* DISPLAY-FLEX{INITIALISTING THE CONTAINER} 
+FLEX DIRECTION IS BY DEFAULT ROW 
+IF WE WRITE ROW REVERSE THEN THE DIRECTION IS FROM RIGHT TO LEFTN N */
+}
+.item{
+    background-color: thistle;
+    border: 3px solid brown;
+    margin: 15px;
+    padding: 6px;
+    width: 200px;
+    height: 200px;
+
+}
+#item1{
+    /* flex properties for flex item  */
+    /* order: 2;   */
+
+}
+#item2{
+    
+    /* flex-basis: 320px;  */
+    /* when flex-direction: is set to row flex-basis: will control width;  */
+    /* when flex-direction: is set to column flex-basis: will control height;  */
+    flex-grow: 0;
+    flex-basis: inherit;
+    order: 4
+    
+}
+#item3{
+    /* align-self:flex-end ;  */
+    align-self: center;
+}

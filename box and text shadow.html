@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX AND TEXT SHADOW</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        margin: 20px;
+        padding: 34px 33px ;
+        /* border: 5px solid black; */
+        background-color: steelblue;
+        color: antiquewhite;
+        /* box-shadow: 2px 2px 20px 14px rgba(215, 18, 18, 0.5);  */
+        /* if you want the box shadow below the box then positive number is used but if you want the box shadow above the box then use negative number  */
+        /* box-shadow: offset-x offset-y color;  */
+        /* box-shadow: offset-x offset-y blur radius spread radius color;  */
+        /* if you want the box shadow inside then use inset  */
+        /* box-shadow: inset 20px 30px 3px 20px yellow;  */
+        /* for multiple shadows seperate the px and color by comma, */
+        box-shadow: 2px 2px 2px 1px red, 3px 3px 3px 1px green;
+    }
+    .card h1{
+        /* text-shadow: 2px 1px red; */
+        text-shadow: 2px 1px 10px  red;
+        /* text-shadow: offset-x offset-y blur radius and color;  */
+        /* negative value concept applies here also */
+    }
+    /* CSS does not throw any errors  */
+
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>THIS IS C++ COURSE</h1>
+            <p>I HAVE STARTED C++ COURSE <hr> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquam. Non animi quibusdam neque nihil optio, totam hic maxime accusantium veniam quasi error eius illum quos ipsa amet et reiciendis iusto, libero ea voluptatum, officia dolorem voluptatem! Placeat officiis reprehenderit, voluptatum voluptate doloribus id unde expedita repellendus, sed vel ab dolore officia hic pariatur numquam velit optio minima quis ipsum animi labore. Dolorum enim repellendus aliquam sit eius nulla, aperiam explicabo iusto ullam quas numquam quae, neque excepturi illo eos praesentium nihil veritatis? Minima magni voluptatum illo atque modi in quae similique accusantium asperiores tempore quaerat, iusto neque doloribus sunt suscipit officia ratione! A ratione ipsum enim exercitationem hic molestias rerum velit eaque. Porro obcaecati nemo repellendus a modi impedit ab corrupti quod?</p></div>
+        <div class="card" id="card2">
+            <h1>THIS IS HTML COURSE</h1>
+            <p> I HAVE STARTED HTML COURSE <hr>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nemo recusandae consectetur aliquam magnam odit consequuntur ab doloribus ut aut, at similique error dolor. Mollitia error cum, quaerat quasi molestiae quae at iure magni eveniet cumque voluptatum enim aperiam autem modi suscipit, dolor in reiciendis qui aliquam minima beatae amet ad sint doloremque. Ducimus ullam molestiae architecto dolore atque quae ipsam rerum blanditiis iste molestias in nihil rem impedit beatae, repellat eum! Eveniet nobis ipsum cupiditate nostrum voluptates quo. Harum, a. Voluptate nobis tempore itaque cupiditate nesciunt impedit iure adipisci in voluptatum, quasi corporis? Officiis dolores dolorem, aliquam blanditiis quibusdam id, tenetur ad hic ipsam vel repellat molestiae cumque mollitia. Error sapiente mollitia quia. Consequatur possimus tempora unde debitis ipsam ea nobis recusandae voluptas asperiores voluptatibus at, ipsum sapiente eius natus sed hic perspiciatis.</p>
+        </div>
+        <div class="card" id="card3">
+            <H1>CARD3</H1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat nisi soluta debitis quidem dolor accusantium placeat, facere ipsa culpa aliquid eveniet iusto sit voluptatem tempora, illum modi inventore nihil veritatis voluptatibus? Alias, recusandae incidunt eos debitis at, quae minima totam, nobis esse ea sunt optio libero quas dignissimos repudiandae! Voluptate nihil repellat perspiciatis rem. Quaerat, dignissimos. Itaque, sequi laborum. Vitae consequatur ipsum commodi expedita repellat in itaque tempore reiciendis, tenetur fuga. Id officiis, eum ratione quo error corrupti earum ullam odit voluptates vel soluta mollitia qui illo deserunt repudiandae totam incidunt nobis similique nostrum facilis ad consectetur tempore esse. Omnis rerum esse qui, quibusdam libero ratione, impedit sit dolore iste animi possimus veniam accusamus sed, dolorem itaque sequi dicta exercitationem explicabo eum. Debitis, temporibus voluptas labore earum magnam quisquam consequuntur odit quaerat facere?</p>
+        </div>
+    </div>
+</body>
+</html>

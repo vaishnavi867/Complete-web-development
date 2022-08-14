@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITIONING</title>
+    <style>
+        .container{
+            border: 4px solid black;
+            background-color: thistle;
+            height: 4000px;
+        }
+        /* position: static, absolute and relative, fixed or sticky */
+        .box{
+            border: 5px solid blue;
+            width: 350px;
+            height: 350px;
+            margin: 3px;
+            display: inline-block;
+        }
+        #box3{
+            /* relative : relative ti its normal position amd will leave a gap at its normal position */
+            /* position is by defaul static so there will be no change in the output */
+            /* position: absolute; */
+            /* position fixed- relative to the browser window */
+            position: sticky;
+            top: 6px;
+            
+            /* top: 44px;
+            left: 34px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">CHAT WITH US
+            
+                
+            
+        </div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

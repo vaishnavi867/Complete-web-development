@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Autofit and Minmax</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        /* grid-template-columns: 112px 112px 112px;  */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        justify-content: center;
+    }
+    .box{
+        border: 2px solid black;
+        background-color: wheat;
+        padding: 33px;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">ITEM1</div>
+        <div class="box">ITEM2</div>
+        <div class="box">ITEM3</div>
+        <div class="box">ITEM4</div>
+        <div class="box">ITEM5</div>
+        <div class="box">ITEM6</div>
+        <div class="box">ITEM7</div>
+        <div class="box">ITEM8</div>
+        <div class="box">ITEM9</div>
+        <div class="box">ITEM10</div>
+        <div class="box">ITEM11</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+        <div class="box">ITEM12</div>
+
+    </div>
+</body>
+</html>

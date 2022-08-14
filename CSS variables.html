@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIABLES AND CUSTOM PROPERTIES</title>
+</head>
+<style>  
+    .box{
+        --box-color: hotpink;
+        width: 300px;
+        height: 400px;
+        background-color: var(--box-color);
+        border: 4px solid rgb(196, 106, 196);
+        box-shadow: 3px 3px var(--box-color);        
+        margin: 20px 20px;
+        text-align: center;
+        font-size: larger;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .container{
+        --box-color: rgb(49, 3, 26);
+        display: flex;
+        background-color: var(--box-color);
+        justify-content: center;
+        max-width: var(--maxw);
+    }
+    :root{
+        --primary-color: hotpink;
+        --danger-color: red;
+        --maxw: 3300px;
+    }
+        
+</style>
+<body>
+    <div class="container">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+</body>
+</html>

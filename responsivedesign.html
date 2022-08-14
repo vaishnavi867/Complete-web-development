@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE DESIGN AND FONT SIZE UNIT</title>
+    <style>
+        .container{
+            border: 3px solid blue;
+            width: 100vw;
+            height: 100vh;
+        }
+        html{
+            font-size: 25px;
+             
+        }
+        h3{
+            text-align: center;
+            
+        }
+        #first{
+            font-size: 3rem;
+            /* em is 10 times the size of the container  3em=30 px*/
+            padding: 3rem;
+            /* padding will take 3 times o font size  */
+        }
+    </style>
+</head>
+<!-- ENDLESS NEW RESOLUTIONS AND DEVICES ARE DIFFICULT TO SUPPORT SEPERATELY FOR A WEB DEVELOPER -->
+<!-- RESPONSIVE DESIGN IS A WAY FOR A WEB DEVELOPER TO MAKE HIS WEBSITE ADAPT TO ALL THE DEVICES AND RESOLUTIONS  -->
+<!-- RESPONSIVE DESIGN IS A NECESSITY AND NOT A LUXURY ANYMORE -->
+<!-- VARIOUS WAYS TO ACHIEVE A RESPONSIVE DESIGN
+1. SETTING UP THE VIEPORT
+2. USE MAX-WIDTH/MAX HEIGHT
+3.USING CSS MEDIA QUERIES
+ 4.USING rem/vh/vw UNITS OVER PIXELS -->
+
+
+<body>
+    <div class="container">
+        <h3  id="first">THIS IS FIRST HEADING</h3>
+        <h3 id="second">THIS IS SECOND HEADING</h3>
+        <h3 id="third">THIS IS THIRD HEADING</h3>
+    </div>
+</body>
+</html>

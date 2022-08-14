@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION</title>
+    <style>
+        .navbar{
+            background-color: hotpink;
+            border-radius: 5px;
+
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            padding: 3px 3px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: yellow;
+            margin: 13px 20px;
+
+        }
+        .navbar  a :hover{
+            color: black;
+            cursor: pointer;
+        }
+        .search{
+            float: right;
+            color: hotpink;
+            padding: 2px;
+            border: 1px black;
+        }
+        .navbar input{
+            border: 3px seagreen;
+            border-radius: 11px;
+            padding: 4px;
+            width: 125px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://google.com" target="_blank">HOME</a></li>
+                <li><a href="http://facebook.com" target="_blank">ABOUT</a></li>
+                <li><a href="http://linkedin.com" target="_blank">SERVICES</a></li>
+                <li><a href="http://instagram.com" target="_blank">CONTACT US</a></li>
+                <div class="search">
+                    THIS IS A SEARCH BOX <input type="text" name="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

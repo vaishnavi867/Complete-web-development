@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTE AND nTH CHILD PSEUDO SELECTORS</title>
+    <style>
+        .container{
+            /* margin:7px 4px ;  */
+            display: block;
+            width: fit-content;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 20px;
+            margin: 12px;
+            border-radius: 6px;
+            background-color: rgb(228, 212, 243);
+            border: 2px solid darkblue;
+        }
+        a[target]{
+            font-size: 55px;
+            color: springgreen;
+        }
+        a[target='_self']{
+            font-size: 15px;
+            color:hotpink ;
+        }
+        input[type='email']{
+            margin: 20px;
+            border: 2px solid black;
+            background-color: rgba(137, 43, 226, 0.118);
+            color: rgb(223, 149, 52);
+        }
+        input[type='password']{
+            width: fit-content;
+        }
+        
+        li:nth-child(2n+0){
+            color: aquamarine;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            width: 300px;
+            margin: 30px;
+            padding: 14px;
+            color: burlywood;
+        }
+        ul{
+            background-color: skyblue;
+        }
+        li:nth-child(odd){
+            background-color: aqua;
+            color: black;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+            color: black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">GO TO GOOGLE</a></h1>
+        <h1><a href="http://facebook.com" target="_self">GO TO FACEBOOK</a></h1>
+        <form action="" class="form.control">
+            <input type="text" placeholder="ENTER YOUR NAME">
+            <input type="password" placeholder="ENTER YOUR PASSWORD">
+            <input type="email" placeholder="ENTER YOUR EMAIL">
+            <input type="submit" placeholder="SUBMIT">
+        </form>
+        <ul>
+            <li class="item" id="item1">ITEM1</li>
+            <li class="item" id="item2">ITEM2</li>
+            <li class="item" id="item3">ITEM3</li>
+            <li class="item" id="item4">ITEM4</li>
+            <li class="item" id="item5">ITEM5</li>
+            <li class="item" id="item6">ITEM6</li>
+            <li class="item" id="item7">ITEM7</li>
+            <li class="item" id="item8">ITEM8</li>
+            <li class="item" id="item9">ITEM9</li>
+            <li class="item" id="item10">ITEM10</li>
+        </ul>
+    </div>
+</body>
+</html>
